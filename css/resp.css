@@ -1,0 +1,98 @@
+/* Typed css */
+#container {
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 8px;
+	height: 48px;
+	background-color: orange;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: orange; 
+	}
+}
+
+
+/* Media Queries */
+@media only screen and (max-width:1100px){
+    .footer-image{
+        border: none;
+        padding: 8px;
+        height: 132px;
+        width: 132px;
+    }
+}
+@media only screen and (max-width:790px){
+    .nav-link-toggel{
+        transition: all 0.9s;
+    }
+
+    .animation{
+        transform: translateX(-249px);
+        transition: all 2s;
+    
+    }
+
+
+    .brand-image {
+        height: 151px;
+        width: 151px;
+    }
+
+    .d-flex{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .center-div{
+        top: 30%;
+    }
+
+    .about-section{
+        height: auto;
+        padding: 37px 0px;
+    }
+
+    .coloumn-about {
+        margin: 0px 13px;
+    }
+
+    .social-link{
+        flex-direction: row;
+    }
+    .social-link-btn{
+        width: 267;
+        width: 267;
+        
+    }
+ 
+   .footer-row{
+       width: 100%;
+       padding: 20px;
+   }
+
+
+   .burger{
+       display: block;
+   }
+
+}

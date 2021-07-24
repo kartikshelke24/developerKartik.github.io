@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+:root {
+    --font1: 'Baloo Bhai 2', cursive;
+    --font2: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{ margin: 0px;padding: 0px;box-sizing: border-box;
+     font-family: 'Poppins', sans-serif!important;}
+
+li{list-style: none;}
+a{text-decoration: none;}
+.para{font-size: 0.9rem;line-height: 1.6;font-weight: 400;color: #ffffff;text-align: justify;}
+.heading2{font-size: 0.9rem;margin: 20px 0px 15px 0px;line-height: 1.1;word-spacing: 4px;font-weight:bold;text-transform: capitalize;}
+
+/* util */
+.btn{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    outline: none;
+    margin: 0 5px;
+    padding: 12px 35px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    background-color: #50d1c0;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);  
+}
+
+.bg-gray{
+    background: rgba(128, 128, 128, 0.76);
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Utill over */
+
+ 
+/* header part start */
+.top-header{
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    position: relative;   
+    
+}
+
+.top-header::before{
+    background: url('../img/backgroundjpg.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    /* opacity: 0.3; */
+    z-index: -1;
+    /* filter: blur(0.15rem); */
+
+}
+/* Navbar under header part start */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+     transition: all ease-in 0.6s;
+}
+
+/* hamBurger under navbar start */
+.burger{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    top: 15px;
+}
+
+.burger-line{
+    width: 33px;
+    height: 4px;
+    background:white;
+    margin: 5px;
+}
+/*  hamBurger under navbar end  */
+
+.brand-name{
+    margin: 11px;
+}
+.brand-name a{
+    padding: 7px 11px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-ul{
+    padding: 6px;
+    margin: 0px 8px 0px 0px;
+}
+
+.nav-li a{
+    padding: 7px 11px;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+/* Navbar under header part end  */
+
+/* Header Section/ second div of header part start */
+.header-section{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: -1;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0px 20px 0;
+    color: white;
+}
+
+.brand-image{
+    height: 222px;
+    width: 222px;
+    border: 2px solid black;
+    border-radius: 110px;
+}
+/* Header Section/ second div of header part End */
+/*********************** Header part / Header end ********************* */
+
+/* *********************  About section start here  *****************/
+.about-section{
+    width: 100%;
+    height: 68vh;
+    padding: 0px 45px;
+    text-align: center;
+    background: #505050;
+    color: white;
+}
+.coloumn-about{
+    margin:0px 35px 0px 10px ;
+}
+/* *********************  About section end here  *****************/
+
+
+
+/**********************  Contact section start here*********************  */
+.contact-section{
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    background: #222121d7;
+    color: white;
+}
+
+.contact-link{
+    margin:6vh auto auto auto;
+    flex-direction: column;
+}
+
+.black-hr{
+    background: black;
+    height: 1px;
+    margin: 1rem;
+    border: none;
+    display: block;
+}
+
+.social-link-btn{
+    width: 308px;
+    margin: 12px 0px;
+    background: #454444 !important;
+}
+
+.icon-holder{
+    margin: 5px 3px;
+}
+
+.icon-holder img{
+    width: 3rem;
+    height:3rem;
+    padding: 7px;
+    margin: 12px 0PX;
+    filter: invert(1);
+}
+.social-link-img:hover{
+    transition: all 0.4s;
+    transform:translatey(-9px) ;
+}
+/* ***************  Contact section end here ************************ */
+
+/******************  Footer section start here *********************/
+.footer-container{
+    background: #222121fc;
+}
+
+.footer-row{
+    width: 33.33%;
+    margin: 23px 0px;
+}
+
+.footer-nav{
+    text-align: center;
+}
+
+.footer-image{
+    border: none;
+    padding: 34px;
+}
+
+.hero-about h3{
+    color: #fffffff2;
+}
+
+.hero-about p{
+    color: #ffffff77;
+}
+
+.hero-about li a{
+    color: #ffffff77;
+}
+/******************  Footer section end here *********************/
